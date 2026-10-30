@@ -1,0 +1,921 @@
+<!doctype html>
+<!--
+  Hotel Prince, Kakdwip — website template
+  ------------------------------------------------------------------
+  Contact details, rates and opening hours live in this file.
+  Search for "TEMPLATE:" to find the values that should be confirmed
+  with the hotel before going live (room rates, meal times, distances).
+  The WhatsApp number used by the enquiry form is set in assets/js/main.js.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hotel Prince, Kakdwip · Rooms &amp; Restaurant on NH117</title>
+  <meta name="description" content="Hotel Prince is a calm, well-run hotel on NH117 in Kakdwip, West Bengal: air-conditioned rooms, a restaurant with buffet dinner, 24-hour room service, free parking and EV charging. On the road to Gangasagar, Bakkhali and the Sundarbans.">
+  <meta name="theme-color" content="#15120F">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hotel Prince, Kakdwip">
+  <meta property="og:description" content="A calm, well-run hotel on NH117, on the road to Gangasagar, Bakkhali and the Sundarbans.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" type="image/webp"
+        imagesrcset="assets/images/entrance-at-night-800.webp 800w, assets/images/entrance-at-night-1600.webp 1600w, assets/images/entrance-at-night-1920.webp 1920w"
+        imagesizes="(orientation: portrait) 180vh, 100vw">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    (function (d) {
+      var r = d.documentElement;
+      r.classList.add('js');
+      try {
+        if (sessionStorage.getItem('hp:loaded') || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          r.classList.add('skip-loader');
+        }
+      } catch (e) {}
+      // Safety net: never leave the page behind the intro screen.
+      setTimeout(function () { r.classList.add('is-loaded'); }, 4500);
+    })(document);
+  </script>
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hotel Prince",
+    "description": "A calm, well-run hotel on NH117 in Kakdwip, West Bengal, with air-conditioned rooms, a restaurant, 24-hour room service and free parking.",
+    "image": "assets/images/og-image.jpg",
+    "telephone": "+91-93390-44141",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "NH117, opposite Kakdwip College, Vidyanagar, Ganespur",
+      "addressLocality": "Kakdwip",
+      "addressRegion": "West Bengal",
+      "postalCode": "743347",
+      "addressCountry": "IN"
+    },
+    "checkinTime": "12:00",
+    "checkoutTime": "11:00",
+    "petsAllowed": false,
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Free parking", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "EV charging", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Air conditioning", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "24-hour room service", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "24-hour front desk", "value": true }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M3 12h17M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M21 12H4M10 6l-6 6 6 6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5.5 3.5h3l2 5-2.4 1.5a11 11 0 0 0 5.9 5.9l1.5-2.4 5 2v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3.5 5.5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20.5l1.4-4.2A8.5 8.5 0 1 1 8.1 19z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.6l2.85 6.05 6.65.8-4.9 4.55 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.55 6.65-.8z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M4.5 19.5C4.5 11 10 5 20 4c-.6 10.3-6.8 15.5-15.5 15.5zM4.5 19.5l7.5-7.5"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 6v12M15 6v12"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 40 30"><path d="M7 24 4 9.6l9.5 7.4L20 6l6.5 11 9.5-7.4L33 24z"/><path d="M7 27.6h26"/></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Intro screen (first visit per session only) -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="loader__crown" viewBox="0 0 40 30">
+        <path pathLength="1" d="M7 24 4 9.6l9.5 7.4L20 6l6.5 11 9.5-7.4L33 24z"/>
+        <path pathLength="1" d="M7 27.6h26"/>
+        <circle cx="4" cy="7.4" r="1.5"/><circle cx="20" cy="3.6" r="1.5"/><circle cx="36" cy="7.4" r="1.5"/>
+      </svg>
+      <p class="loader__word">
+        <span style="--i:0">H</span><span style="--i:1">o</span><span style="--i:2">t</span><span style="--i:3">e</span><span style="--i:4">l</span><span style="--i:5">&nbsp;</span><span style="--i:6">P</span><span style="--i:7">r</span><span style="--i:8">i</span><span style="--i:9">n</span><span style="--i:10">c</span><span style="--i:11">e</span>
+      </p>
+      <p class="loader__place">Kakdwip</p>
+      <span class="loader__line"></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="hdr" data-hdr>
+    <div class="hdr__inner wrap">
+      <a class="brand" href="#top" aria-label="Hotel Prince, Kakdwip, back to top">
+        <svg class="brand__crown" viewBox="0 0 40 30" aria-hidden="true">
+          <use href="#i-crown"/>
+          <circle cx="4" cy="7.4" r="1.6"/><circle cx="20" cy="3.6" r="1.6"/><circle cx="36" cy="7.4" r="1.6"/>
+        </svg>
+        <span class="brand__name">Hotel Prince</span>
+        <span class="brand__place">Kakdwip</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#stay">Rooms</a>
+        <a href="#dining">Dining</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+      </nav>
+
+      <div class="hdr__end">
+        <a class="hdr__tel" href="tel:+919339044141">
+          <svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>
+          +91 93390 44141
+        </a>
+        <a class="btn btn--sm hdr__book" href="#reserve">
+          <span class="btn__t"><span data-t="Book a stay">Book a stay</span></span>
+        </a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" inert>
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#stay" style="--i:0"><span><small>01</small>Rooms</span></a>
+      <a href="#dining" style="--i:1"><span><small>02</small>Dining</span></a>
+      <a href="#amenities" style="--i:2"><span><small>03</small>Amenities</span></a>
+      <a href="#gallery" style="--i:3"><span><small>04</small>Gallery</span></a>
+      <a href="#location" style="--i:4"><span><small>05</small>Location</span></a>
+      <a href="#reserve" style="--i:5"><span><small>06</small>Reserve</span></a>
+    </nav>
+    <div class="menu__foot">
+      <a href="tel:+919339044141">+91 93390 44141</a>
+      <p>NH117, opposite Kakdwip College<br>Kakdwip, West Bengal 743347</p>
+      <p>Front desk open 24 hours</p>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-label="Welcome to Hotel Prince">
+      <div class="hero__media">
+        <figure class="hero__slide is-active" data-caption="The entrance, after dark">
+          <img src="assets/images/entrance-at-night-1600.webp"
+               srcset="assets/images/entrance-at-night-800.webp 800w, assets/images/entrance-at-night-1600.webp 1600w, assets/images/entrance-at-night-1920.webp 1920w"
+               sizes="(orientation: portrait) 180vh, 100vw"
+               width="1920" height="1080" fetchpriority="high"
+               alt="The Hotel Prince entrance lit up at night, with the crown logo on the wall and potted plants by the steps">
+        </figure>
+        <figure class="hero__slide" data-caption="On NH117, opposite Kakdwip College">
+          <img src="assets/images/exterior-wide-1600.webp"
+               srcset="assets/images/exterior-wide-800.webp 800w, assets/images/exterior-wide-1600.webp 1600w, assets/images/exterior-wide-2400.webp 2400w"
+               sizes="(orientation: portrait) 200vh, 100vw"
+               width="2400" height="1200" decoding="async"
+               alt="Hotel Prince seen from the forecourt by day: a glass-fronted tower beside a cream building with curved balconies, framed by palms">
+        </figure>
+        <figure class="hero__slide" data-caption="The restaurant">
+          <img src="assets/images/restaurant-interior-1600.webp"
+               srcset="assets/images/restaurant-interior-800.webp 800w, assets/images/restaurant-interior-1600.webp 1600w"
+               sizes="(orientation: portrait) 140vh, 100vw"
+               width="1600" height="1200" decoding="async"
+               alt="The hotel restaurant with dark wood tables, leather chairs and warm downlights">
+        </figure>
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__body wrap">
+        <div class="hero__content">
+          <p class="hero__eyebrow hero__in" style="--i:0">Kakdwip <i></i> NH117 <i></i> West Bengal</p>
+          <h1 class="hero__title">
+            <span class="ln"><span style="--i:1">Where the highway</span></span>
+            <span class="ln"><span style="--i:2"><em>slows down.</em></span></span>
+          </h1>
+          <p class="hero__lede hero__in" style="--i:3">A calm, well-run hotel on the road to Gangasagar, Bakkhali and the Sundarbans, with quiet rooms, a kitchen guests keep coming back for, and a front desk that never closes.</p>
+          <div class="hero__ctas hero__in" style="--i:4">
+            <a class="btn btn--light hero__cta-book" href="#reserve">
+              <span class="btn__t"><span data-t="Check availability">Check availability</span></span>
+            </a>
+            <a class="link-arrow link-arrow--light" href="#stay">Explore the rooms <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="hero__aside hero__in" style="--i:5">
+          <a class="hero__rating" href="#reviews">
+            <span class="hero__stars" aria-hidden="true">
+              <svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill is-dim"><use href="#i-star"/></svg>
+            </span>
+            <span><strong>4.1</strong> on Google <span class="hero__rating-n">· 145 reviews</span></span>
+          </a>
+          <div class="hero__counter">
+            <span data-slide-num>01</span>
+            <span class="hero__bar"><i></i></span>
+            <span>03</span>
+            <button class="hero__toggle" type="button" data-hero-toggle aria-label="Pause slideshow" aria-pressed="false">
+              <svg class="i i-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+              <svg class="i i--fill i-play" aria-hidden="true"><use href="#i-play"/></svg>
+            </button>
+          </div>
+          <p class="hero__caption" data-slide-caption aria-live="polite">The entrance, after dark</p>
+        </div>
+      </div>
+
+      <!-- Quick availability bar (tablet landscape & desktop) -->
+      <div class="bookbar wrap">
+        <form class="bookbar__inner" id="quickbook" aria-label="Check availability">
+          <p class="bookbar__title">Plan <em>your stay</em></p>
+          <label class="bb-field">
+            <span>Check-in</span>
+            <input type="date" id="qb-in" name="checkin">
+          </label>
+          <label class="bb-field">
+            <span>Check-out</span>
+            <input type="date" id="qb-out" name="checkout">
+          </label>
+          <label class="bb-field">
+            <span>Guests</span>
+            <select id="qb-guests" name="guests">
+              <option>1 adult</option>
+              <option selected>2 adults</option>
+              <option>2 adults + 1 child</option>
+              <option>2 adults + 2 children</option>
+              <option>3 adults</option>
+              <option>4 adults</option>
+            </select>
+          </label>
+          <button class="btn btn--rust bookbar__btn" type="submit">
+            <span class="btn__t"><span data-t="Check availability">Check availability</span></span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro section" id="hotel" aria-labelledby="hotel-title">
+      <div class="wrap">
+        <div class="intro__head">
+          <p class="label rv"><span>01</span> The Hotel</p>
+          <h2 class="sr-only" id="hotel-title">About Hotel Prince</h2>
+          <p class="statement" data-words>Hotel Prince stands on <span class="nums">NH117,</span> opposite Kakdwip College, a resting place on the long road south. Pilgrims bound for Gangasagar, families heading for the beach at Bakkhali and people here on business all stop for the same things: <em>a quiet room, a good meal and a warm welcome at any hour.</em></p>
+        </div>
+
+        <div class="intro__grid">
+          <figure class="intro__arch">
+            <div class="frame rv-clip">
+              <div class="px" data-speed="-0.07">
+                <img src="assets/images/building-tall-800.webp"
+                     srcset="assets/images/building-tall-800.webp 800w, assets/images/building-tall-1400.webp 1400w"
+                     sizes="(min-width: 1024px) 38vw, 88vw" width="1400" height="1929" loading="lazy" decoding="async"
+                     alt="The cream facade of Hotel Prince with its curved balconies and potted plants at the entrance, on a clear morning">
+              </div>
+            </div>
+          </figure>
+
+          <div class="intro__copy">
+            <p class="rv">Behind a paved forecourt with free parking and an EV charging point, our air-conditioned rooms are kept the way travellers hope for and rarely find on a highway: spotless, quiet and made up fresh every day. Several open onto balconies.</p>
+            <p class="rv" style="--d:.08s">Downstairs, the restaurant serves breakfast, lunch and a buffet dinner, and the kitchen keeps cooking for room service through the night. The team speaks Bengali, Hindi and English, and is happy to help you plan the next leg of your trip.</p>
+            <a class="link-arrow rv" style="--d:.16s" href="#stay">See the rooms <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <figure class="intro__wide">
+            <div class="frame rv-clip">
+              <div class="px" data-speed="0.06">
+                <img src="assets/images/exterior-wide-1600.webp"
+                     srcset="assets/images/exterior-wide-800.webp 800w, assets/images/exterior-wide-1600.webp 1600w"
+                     sizes="(min-width: 1024px) 48vw, 92vw" width="1600" height="800" loading="lazy" decoding="async"
+                     alt="The hotel's glass tower and cream wing seen from the forecourt, with palm trees behind">
+              </div>
+            </div>
+            <figcaption class="cap rv">The hotel from the forecourt, NH117</figcaption>
+          </figure>
+        </div>
+
+        <dl class="facts" data-stagger=".1">
+          <div class="fact rv">
+            <dt>Google rating</dt>
+            <dd class="fact__num"><span data-count="4.1" data-decimals="1">4.1</span><small>/5</small></dd>
+            <dd class="fact__note">from 145 guest reviews</dd>
+          </div>
+          <div class="fact rv">
+            <dt>Room service</dt>
+            <dd class="fact__num"><span data-count="24">24</span><small>hrs</small></dd>
+            <dd class="fact__note">and a front desk that never sleeps</dd>
+          </div>
+          <div class="fact rv">
+            <dt>Check-in</dt>
+            <dd class="fact__num">12<small>:00</small></dd>
+            <dd class="fact__note">check-out by 11:00 AM</dd>
+          </div>
+          <div class="fact rv">
+            <dt>Parking</dt>
+            <dd class="fact__num">Free</dd>
+            <dd class="fact__note">with EV charging on site</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee>
+        <div class="marquee__group">
+          <span class="marquee__item">24-hour room service</span>
+          <span class="marquee__item">Free Wi-Fi</span>
+          <span class="marquee__item">EV charging</span>
+          <span class="marquee__item">Buffet dinner nightly</span>
+          <span class="marquee__item">Free parking</span>
+          <span class="marquee__item">Daily housekeeping</span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">24-hour room service</span>
+          <span class="marquee__item">Free Wi-Fi</span>
+          <span class="marquee__item">EV charging</span>
+          <span class="marquee__item">Buffet dinner nightly</span>
+          <span class="marquee__item">Free parking</span>
+          <span class="marquee__item">Daily housekeeping</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ROOMS ============ -->
+    <section class="stay section" id="stay" aria-labelledby="stay-title">
+      <div class="wrap">
+        <header class="sec-intro">
+          <p class="label rv"><span>02</span> Stay</p>
+          <h2 class="h2 rv-lines" id="stay-title">
+            <span class="ln"><span>Rooms for the end</span></span>
+            <span class="ln"><span><em>of a long road.</em></span></span>
+          </h2>
+          <p class="sec-intro__text rv">Every room is air-conditioned, with a private shower room, daily housekeeping and free Wi-Fi. Wake-up calls, laundry and late-night room service are one phone call away.</p>
+        </header>
+
+        <div class="rooms" data-rooms>
+          <div class="rooms__media rv" data-cursor="Drag">
+            <figure class="room-img is-active">
+              <img src="assets/images/air-conditioned-room-800.webp"
+                   srcset="assets/images/air-conditioned-room-800.webp 800w, assets/images/air-conditioned-room-1600.webp 1600w"
+                   sizes="(min-width: 1024px) 55vw, 100vw" width="1600" height="2133" loading="lazy" decoding="async"
+                   alt="Deluxe Double room with a queen bed, white linen with a rust-coloured runner, a wood headboard and long curtains">
+            </figure>
+            <figure class="room-img">
+              <img src="assets/images/room-headboard-800.webp"
+                   srcset="assets/images/room-headboard-800.webp 800w, assets/images/room-headboard-1600.webp 1600w"
+                   sizes="(min-width: 1024px) 55vw, 100vw" width="1600" height="810" loading="lazy" decoding="async"
+                   alt="Premier Room with a full-width wood-panelled headboard, wall lamps either side and heavy brown drapes">
+            </figure>
+            <figure class="room-img">
+              <img src="assets/images/room-double-800.webp"
+                   srcset="assets/images/room-double-800.webp 800w, assets/images/room-double-1600.webp 1600w"
+                   sizes="(min-width: 1024px) 55vw, 100vw" width="1600" height="1935" loading="lazy" decoding="async"
+                   alt="Family Room with a large double bed, bedside tables and a wooden sitting corner">
+            </figure>
+            <p class="rooms__count"><span data-room-num>01</span> / 03</p>
+          </div>
+
+          <div class="rooms__panel">
+            <div class="rooms__slides" aria-live="polite">
+              <!-- TEMPLATE: room names, descriptions and rates are placeholders. Confirm with the hotel. -->
+              <article class="room is-active" data-room="Deluxe Double">
+                <p class="room__kicker">Room 01 · For a night on the road</p>
+                <h3 class="room__name">Deluxe Double</h3>
+                <p class="room__desc">Warm wood, crisp white linen and a queen bed that is hard to leave. A calm, well-lit room for a proper night's sleep before the road, or the ferry, the next morning.</p>
+                <ul class="room__specs">
+                  <li><span>Sleeps</span>2 adults</li>
+                  <li><span>Bed</span>Queen</li>
+                  <li><span>Bathroom</span>Private, with shower</li>
+                  <li><span>Rates from</span><i class="rate"><b>₹2,200</b> / night</i></li>
+                </ul>
+              </article>
+              <article class="room" data-room="Premier Room" aria-hidden="true">
+                <p class="room__kicker">Room 02 · Most requested</p>
+                <h3 class="room__name">Premier Room</h3>
+                <p class="room__desc">A wider room with a full-width panelled headboard, reading lamps on both sides and heavy drapes for a proper lie-in. Selected Premier Rooms open onto a balcony.</p>
+                <ul class="room__specs">
+                  <li><span>Sleeps</span>2 adults + 1 child</li>
+                  <li><span>Bed</span>Large double</li>
+                  <li><span>Bathroom</span>Private, with shower</li>
+                  <li><span>Rates from</span><i class="rate"><b>₹2,800</b> / night</i></li>
+                </ul>
+              </article>
+              <article class="room" data-room="Family Room" aria-hidden="true">
+                <p class="room__kicker">Room 03 · For families &amp; groups</p>
+                <h3 class="room__name">Family Room</h3>
+                <p class="room__desc">Space for everyone after a long drive, with a large double bed, a sitting corner and room for an extra bed on request. Kids are welcome, and the kitchen is happy to cook mild.</p>
+                <ul class="room__specs">
+                  <li><span>Sleeps</span>Up to 4</li>
+                  <li><span>Bed</span>Double + extra bed</li>
+                  <li><span>Bathroom</span>Private, with shower</li>
+                  <li><span>Rates from</span><i class="rate"><b>₹3,400</b> / night</i></li>
+                </ul>
+              </article>
+            </div>
+
+            <div class="rooms__controls">
+              <div class="rooms__arrows">
+                <button class="circle-btn" type="button" data-room-prev aria-label="Previous room">
+                  <svg class="i" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+                </button>
+                <button class="circle-btn" type="button" data-room-next aria-label="Next room">
+                  <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </button>
+              </div>
+              <div class="rooms__dots">
+                <button type="button" data-room-dot="0" aria-label="Show Deluxe Double" aria-current="true"></button>
+                <button type="button" data-room-dot="1" aria-label="Show Premier Room" aria-current="false"></button>
+                <button type="button" data-room-dot="2" aria-label="Show Family Room" aria-current="false"></button>
+              </div>
+            </div>
+            <a class="btn btn--dark rooms__book" href="#reserve" data-room-book>
+              <span class="btn__t"><span data-t="Enquire about this room">Enquire about this room</span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DINING ============ -->
+    <section class="dining section" id="dining" aria-labelledby="dining-title">
+      <div class="wrap">
+        <header class="dining__head">
+          <p class="label label--light rv"><span>03</span> Dining</p>
+          <h2 class="h2 rv-lines" id="dining-title">
+            <span class="ln"><span>A kitchen guests</span></span>
+            <span class="ln"><span><em>write home about.</em></span></span>
+          </h2>
+        </header>
+
+        <div class="dining__grid">
+          <figure class="dining__main">
+            <div class="frame rv-clip">
+              <div class="px" data-speed="-0.06">
+                <img src="assets/images/restaurant-interior-800.webp"
+                     srcset="assets/images/restaurant-interior-800.webp 800w, assets/images/restaurant-interior-1600.webp 1600w"
+                     sizes="(min-width: 1024px) 56vw, 100vw" width="1600" height="1200" loading="lazy" decoding="async"
+                     alt="The restaurant at Hotel Prince, with long wooden tables, quilted chairs and framed pictures on the wall">
+              </div>
+            </div>
+            <figcaption class="cap cap--light rv">The restaurant, ground floor</figcaption>
+          </figure>
+
+          <div class="dining__copy">
+            <p class="lead rv">Ask guests what they remember about their stay, and the food usually comes first.</p>
+            <p class="rv">The restaurant is small and warm, with table service through the day and a buffet dinner every evening. North Indian favourites share the menu with Bengali home cooking: dal, rice, seasonal vegetables and fish from Kakdwip's own harbour. Vegetarian guests are very well looked after (the palak paneer has its admirers), and room service runs around the clock.</p>
+
+            <!-- TEMPLATE: confirm meal times with the hotel. -->
+            <ul class="hours rv">
+              <li><span>Breakfast</span><span>7:30 – 10:30 am</span></li>
+              <li><span>Lunch</span><span>12:30 – 3:30 pm</span></li>
+              <li><span>Buffet dinner</span><span>8:00 – 10:30 pm</span></li>
+              <li><span>Room service</span><span>24 hours</span></li>
+            </ul>
+
+            <ul class="pills rv">
+              <li>Vegetarian &amp; vegan meals</li>
+              <li>Locally sourced produce</li>
+              <li>Organic cage-free eggs</li>
+              <li>Responsibly sourced seafood</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="plates">
+          <div class="plate" data-speed="0.05">
+            <figure>
+              <div class="frame rv-clip"><img src="assets/images/dining-paneer-curry-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Paneer cubes in a rich orange tomato gravy, served in a white bowl"></div>
+              <figcaption>Paneer butter masala</figcaption>
+            </figure>
+          </div>
+          <div class="plate" data-speed="-0.04">
+            <figure>
+              <div class="frame rv-clip" style="--d:.1s"><img src="assets/images/dining-dal-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Yellow dal with a tempering of whole spices in a white footed cup"></div>
+              <figcaption>Tadka dal</figcaption>
+            </figure>
+          </div>
+          <div class="plate" data-speed="0.08">
+            <figure>
+              <div class="frame rv-clip" style="--d:.2s"><img src="assets/images/dining-rice-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Jeera rice with cumin seeds and fresh coriander, with puffed luchi on the side"></div>
+              <figcaption>Jeera rice &amp; luchi</figcaption>
+            </figure>
+          </div>
+          <div class="plate" data-speed="-0.02">
+            <figure>
+              <div class="frame rv-clip" style="--d:.3s"><img src="assets/images/dining-curry-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="A dry, deeply spiced house curry served in a white dish with a serving spoon"></div>
+              <figcaption>House curry</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AMENITIES ============ -->
+    <section class="amen section" id="amenities" aria-labelledby="amen-title">
+      <div class="wrap">
+        <header class="sec-intro">
+          <p class="label rv"><span>04</span> Amenities</p>
+          <h2 class="h2 rv-lines" id="amen-title">
+            <span class="ln"><span>Everything the road</span></span>
+            <span class="ln"><span><em>asks for.</em></span></span>
+          </h2>
+          <p class="sec-intro__text rv">The essentials, done properly, plus a few things that are hard to find anywhere else on this stretch of NH117.</p>
+        </header>
+
+        <div class="amen__grid" data-stagger=".08">
+          <div class="amen__col rv">
+            <h3>In your room <small>05</small></h3>
+            <ul>
+              <li>Air-conditioning</li>
+              <li>Private shower room</li>
+              <li>Daily housekeeping</li>
+              <li>Wake-up calls</li>
+              <li>Free Wi-Fi</li>
+            </ul>
+          </div>
+          <div class="amen__col rv">
+            <h3>Service <small>05</small></h3>
+            <ul>
+              <li>24-hour front desk</li>
+              <li>24-hour room service</li>
+              <li>Laundry, full &amp; self-service</li>
+              <li>Baggage storage</li>
+              <li>Kid-friendly stays</li>
+            </ul>
+          </div>
+          <div class="amen__col rv">
+            <h3>Getting around <small>05</small></h3>
+            <ul>
+              <li>Free self-parking</li>
+              <li>EV charging point</li>
+              <li>Car rental on site</li>
+              <li>Local shuttle</li>
+              <li>Autos &amp; taxis at the gate</li>
+            </ul>
+          </div>
+          <div class="amen__col rv">
+            <h3>Work &amp; stay <small>05</small></h3>
+            <ul>
+              <li>Business centre</li>
+              <li>Meeting rooms</li>
+              <li>Buffet dinner nightly</li>
+              <li>Cards &amp; cash accepted</li>
+              <li>English &amp; Hindi spoken</li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="amen__banner">
+          <div class="frame rv-clip">
+            <div class="px" data-speed="-0.08">
+              <img src="assets/images/parking-at-night-800.webp"
+                   srcset="assets/images/parking-at-night-800.webp 800w, assets/images/parking-at-night-1600.webp 1600w"
+                   sizes="100vw" width="1600" height="900" loading="lazy" decoding="async"
+                   alt="The hotel forecourt at night, with a car parked on the paved parking area beside the lit entrance">
+            </div>
+          </div>
+          <figcaption>
+            <span class="amen__banner-k">Free parking &amp; EV charging</span>
+            <span class="amen__banner-t">Park at the door, plug in, check in.</span>
+          </figcaption>
+        </figure>
+
+        <p class="eco rv">
+          <svg class="i" aria-hidden="true"><use href="#i-leaf"/></svg>
+          <span><strong>Run with care.</strong> Energy-efficient lighting and cooling, water-saving fittings, eco-friendly toiletries, and surplus food donated or composted.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title" data-hscroll>
+      <div class="gallery__sticky">
+        <div class="gallery__head wrap">
+          <div>
+            <p class="label rv"><span>05</span> Gallery</p>
+            <h2 class="h2 rv-lines" id="gallery-title"><span class="ln"><span>A look <em>around.</em></span></span></h2>
+          </div>
+          <p class="gallery__hint rv"><span class="hint-desk">Scroll to explore</span><span class="hint-touch">Swipe to explore</span> <span class="gallery__num"><b data-g-num>01</b> / 12</span></p>
+        </div>
+
+        <div class="gallery__viewport">
+          <ul class="gallery__track" data-track>
+            <li class="g-item g-item--tall">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/entrance-at-night-1600.webp" data-caption="The entrance, after dark">
+                <img src="assets/images/entrance-at-night-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="The hotel entrance lit up at night">
+              </button>
+              <span class="g-cap">The entrance, after dark</span>
+            </li>
+            <li class="g-item g-item--low">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/building-tall-1400.webp" data-caption="Morning on the forecourt">
+                <img src="assets/images/building-tall-800.webp" width="800" height="1102" loading="lazy" decoding="async" alt="The cream facade with curved balconies in morning light">
+              </button>
+              <span class="g-cap">Morning on the forecourt</span>
+            </li>
+            <li class="g-item">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/restaurant-interior-1600.webp" data-caption="The restaurant">
+                <img src="assets/images/restaurant-interior-800.webp" width="800" height="600" loading="lazy" decoding="async" alt="The restaurant with wooden tables and quilted chairs">
+              </button>
+              <span class="g-cap">The restaurant</span>
+            </li>
+            <li class="g-item g-item--low">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/dining-paneer-curry-1600.webp" data-caption="Paneer butter masala">
+                <img src="assets/images/dining-paneer-curry-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Paneer in tomato gravy">
+              </button>
+              <span class="g-cap">Paneer butter masala</span>
+            </li>
+            <li class="g-item g-item--tall">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/air-conditioned-room-1600.webp" data-caption="Deluxe Double">
+                <img src="assets/images/air-conditioned-room-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Deluxe Double room with a queen bed">
+              </button>
+              <span class="g-cap">Deluxe Double</span>
+            </li>
+            <li class="g-item">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/exterior-wide-1600.webp" data-caption="On NH117, opposite Kakdwip College">
+                <img src="assets/images/exterior-wide-800.webp" width="800" height="400" loading="lazy" decoding="async" alt="The hotel building and glass tower by day">
+              </button>
+              <span class="g-cap">On NH117, opposite Kakdwip College</span>
+            </li>
+            <li class="g-item g-item--low">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/room-headboard-1600.webp" data-caption="Premier Room">
+                <img src="assets/images/room-headboard-800.webp" width="800" height="405" loading="lazy" decoding="async" alt="Premier Room headboard with wall lamps">
+              </button>
+              <span class="g-cap">Premier Room</span>
+            </li>
+            <li class="g-item g-item--tall">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/dining-rice-1600.webp" data-caption="Jeera rice &amp; luchi">
+                <img src="assets/images/dining-rice-800.webp" width="800" height="1067" loading="lazy" decoding="async" alt="Jeera rice with luchi">
+              </button>
+              <span class="g-cap">Jeera rice &amp; luchi</span>
+            </li>
+            <li class="g-item">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/entrance-and-grounds-1600.webp" data-caption="The forecourt at night">
+                <img src="assets/images/entrance-and-grounds-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="The forecourt and gardens at night">
+              </button>
+              <span class="g-cap">The forecourt at night</span>
+            </li>
+            <li class="g-item g-item--low">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/bathroom-detail-1600.webp" data-caption="Private shower room">
+                <img src="assets/images/bathroom-detail-800.webp" width="800" height="725" loading="lazy" decoding="async" alt="Shower room with patterned wall tiles and a rain shower">
+              </button>
+              <span class="g-cap">Private shower room</span>
+            </li>
+            <li class="g-item g-item--tall">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/room-double-1600.webp" data-caption="Family Room">
+                <img src="assets/images/room-double-800.webp" width="800" height="968" loading="lazy" decoding="async" alt="Family Room with a large double bed">
+              </button>
+              <span class="g-cap">Family Room</span>
+            </li>
+            <li class="g-item">
+              <button class="g-btn" type="button" data-lightbox data-cursor="View" data-full="assets/images/parking-at-night-1600.webp" data-caption="Free parking on site">
+                <img src="assets/images/parking-at-night-800.webp" width="800" height="450" loading="lazy" decoding="async" alt="Parking area at night">
+              </button>
+              <span class="g-cap">Free parking on site</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="gallery__progress wrap"><span><i data-g-bar></i></span></div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews section" id="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <p class="label rv"><span>06</span> Guests</p>
+        <div class="reviews__grid">
+          <div class="score">
+            <h2 class="sr-only" id="reviews-title">Guest reviews</h2>
+            <p class="score__num" aria-label="Rated 4.1 out of 5"><span data-count="4.1" data-decimals="1">4.1</span></p>
+            <div class="stars" style="--rating:4.1" aria-hidden="true">
+              <span class="stars__base"><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg></span>
+              <span class="stars__fill"><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg><svg class="i i--fill"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="score__meta rv">Rated <strong>Very good</strong> across 145 Google reviews, with nearly four in five guests giving us four or five stars.</p>
+            <a class="link-arrow rv" href="https://www.google.com/travel/hotels/s/C7hzhpCxJqpCbdDL6" target="_blank" rel="noopener">Read the reviews on Google <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
+          </div>
+
+          <figure class="quote rv">
+            <blockquote>
+              <p>The bed was incredibly cozy, and I had a peaceful night's sleep every night.</p>
+            </blockquote>
+            <figcaption><span>Rohit Sharma</span> Google review</figcaption>
+          </figure>
+        </div>
+
+        <div class="themes">
+          <h3 class="themes__title rv">What guests mention most</h3>
+          <ul class="themes__list" data-stagger=".08">
+            <li class="rv"><h4>Service</h4><p>Staff are described as cordial and helpful, and room service as quick, whatever the hour.</p></li>
+            <li class="rv"><h4>Food</h4><p>The restaurant comes up in review after review, especially its vegetarian cooking.</p></li>
+            <li class="rv"><h4>Rooms</h4><p>Neat, clean and quiet, with balconies and beds guests say they slept well in.</p></li>
+            <li class="rv"><h4>Location</h4><p>Right on the highway, with easy parking and local transport waiting at the gate.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCATION ============ -->
+    <section class="location section" id="location" aria-labelledby="loc-title">
+      <div class="wrap location__grid">
+        <div class="location__info">
+          <p class="label rv"><span>07</span> Location</p>
+          <h2 class="h2 rv-lines" id="loc-title">
+            <span class="ln"><span>On <span class="nums">NH117</span>, opposite</span></span>
+            <span class="ln"><span><em>Kakdwip College.</em></span></span>
+          </h2>
+          <address class="location__addr rv">
+            Hotel Prince, NH117, Vidyanagar<br>
+            Kakdwip, Ganespur, West Bengal 743347
+          </address>
+          <div class="location__actions rv">
+            <a class="btn btn--dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=Hotel+Prince+Kakdwip+West+Bengal+743347" target="_blank" rel="noopener">
+              <span class="btn__t"><span data-t="Get directions">Get directions</span></span>
+            </a>
+            <a class="link-arrow" href="tel:+919339044141"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> +91 93390 44141</a>
+          </div>
+
+          <!-- TEMPLATE: approximate road distances; verify before launch. -->
+          <h3 class="nearby__title rv">On the way to</h3>
+          <ul class="nearby" data-stagger=".06">
+            <li class="rv"><span class="nearby__name">Lot 8 ferry ghat</span><span class="nearby__note">Ferry to Sagar Island &amp; Gangasagar</span><span class="nearby__dist">≈ 5 km</span></li>
+            <li class="rv"><span class="nearby__name">Namkhana</span><span class="nearby__note">Gateway to Bakkhali &amp; Frasergunj</span><span class="nearby__dist">≈ 20 km</span></li>
+            <li class="rv"><span class="nearby__name">Diamond Harbour</span><span class="nearby__note">Riverfront town on the Hooghly</span><span class="nearby__dist">≈ 40 km</span></li>
+            <li class="rv"><span class="nearby__name">Bakkhali Sea Beach</span><span class="nearby__note">The nearest beach on the Bay of Bengal</span><span class="nearby__dist">≈ 45 km</span></li>
+            <li class="rv"><span class="nearby__name">Kolkata</span><span class="nearby__note">About three hours by road</span><span class="nearby__dist">≈ 95 km</span></li>
+          </ul>
+          <p class="nearby__fine rv">Distances are approximate, by road.</p>
+        </div>
+
+        <div class="location__map rv">
+          <div class="map" data-map data-src="https://www.google.com/maps?q=Hotel%20Prince%2C%20NH117%2C%20Kakdwip%2C%20West%20Bengal%20743347&amp;z=15&amp;output=embed">
+            <div class="map__ph">
+              <span class="map__pin"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <span>Loading map</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVE ============ -->
+    <section class="reserve" id="reserve" aria-labelledby="reserve-title">
+      <div class="reserve__bg" aria-hidden="true">
+        <div class="px" data-speed="-0.1">
+          <img src="assets/images/entrance-and-grounds-800.webp"
+               srcset="assets/images/entrance-and-grounds-800.webp 800w, assets/images/entrance-and-grounds-1600.webp 1600w"
+               sizes="(orientation: portrait) 200vh, 100vw" width="1600" height="900" loading="lazy" decoding="async" alt="">
+        </div>
+      </div>
+
+      <div class="wrap reserve__grid">
+        <div class="reserve__copy">
+          <p class="label label--light rv"><span>08</span> Reserve</p>
+          <h2 class="h2 rv-lines" id="reserve-title">
+            <span class="ln"><span>Stay with us on</span></span>
+            <span class="ln"><span><em>your way south.</em></span></span>
+          </h2>
+          <p class="reserve__text rv">Send us your dates and we'll confirm availability and our best direct rate. Prefer to talk it through? The front desk is open 24 hours.</p>
+          <ul class="reserve__facts rv">
+            <li><span>Call us</span><a href="tel:+919339044141">+91 93390 44141</a></li>
+            <li><span>Check-in</span>12:00 PM</li>
+            <li><span>Check-out</span>11:00 AM</li>
+          </ul>
+        </div>
+
+        <form class="form rv" id="enquiry" novalidate>
+          <h3 class="form__title">Booking enquiry</h3>
+          <div class="field">
+            <label for="f-name">Full name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+            <p class="field__err" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            <p class="field__err" aria-live="polite"></p>
+          </div>
+          <div class="field field--half">
+            <label for="f-in">Check-in</label>
+            <input id="f-in" name="checkin" type="date" required>
+            <p class="field__err" aria-live="polite"></p>
+          </div>
+          <div class="field field--half">
+            <label for="f-out">Check-out</label>
+            <input id="f-out" name="checkout" type="date" required>
+            <p class="field__err" aria-live="polite"></p>
+          </div>
+          <div class="field field--half">
+            <label for="f-guests">Guests</label>
+            <select id="f-guests" name="guests">
+              <option>1 adult</option>
+              <option selected>2 adults</option>
+              <option>2 adults + 1 child</option>
+              <option>2 adults + 2 children</option>
+              <option>3 adults</option>
+              <option>4 adults</option>
+            </select>
+          </div>
+          <div class="field field--half">
+            <label for="f-room">Room</label>
+            <select id="f-room" name="room">
+              <option>Any room</option>
+              <option>Deluxe Double</option>
+              <option>Premier Room</option>
+              <option>Family Room</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-notes">Anything we should know? <span>(optional)</span></label>
+            <textarea id="f-notes" name="notes" rows="2"></textarea>
+          </div>
+          <button class="btn btn--rust form__submit" type="submit">
+            <svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>
+            <span class="btn__t"><span data-t="Enquire on WhatsApp">Enquire on WhatsApp</span></span>
+          </button>
+          <p class="form__note">Opens WhatsApp with your details filled in. Nothing is charged online.</p>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr__top">
+        <div class="ftr__brand">
+          <a class="brand brand--light" href="#top" aria-label="Hotel Prince, back to top">
+            <svg class="brand__crown" viewBox="0 0 40 30" aria-hidden="true">
+              <use href="#i-crown"/>
+              <circle cx="4" cy="7.4" r="1.6"/><circle cx="20" cy="3.6" r="1.6"/><circle cx="36" cy="7.4" r="1.6"/>
+            </svg>
+            <span class="brand__name">Hotel Prince</span>
+            <span class="brand__place">Kakdwip</span>
+          </a>
+          <p>A calm, well-run hotel on NH117, on the road to Gangasagar, Bakkhali and the Sundarbans.</p>
+        </div>
+        <div class="ftr__col">
+          <h2 class="ftr__h">Visit</h2>
+          <address>NH117, opposite Kakdwip College<br>Vidyanagar, Kakdwip<br>West Bengal 743347</address>
+          <a class="ftr__link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Hotel+Prince+Kakdwip+West+Bengal+743347" target="_blank" rel="noopener">Directions <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
+        </div>
+        <div class="ftr__col">
+          <h2 class="ftr__h">Contact</h2>
+          <a class="ftr__link" href="tel:+919339044141">+91 93390 44141</a>
+          <a class="ftr__link" href="https://wa.me/919339044141" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="ftr__col">
+          <h2 class="ftr__h">Explore</h2>
+          <a class="ftr__link" href="#stay">Rooms</a>
+          <a class="ftr__link" href="#dining">Dining</a>
+          <a class="ftr__link" href="#amenities">Amenities</a>
+          <a class="ftr__link" href="#gallery">Gallery</a>
+          <a class="ftr__link" href="#reserve">Reserve</a>
+        </div>
+        <div class="ftr__col">
+          <h2 class="ftr__h">Hours</h2>
+          <p>Check-in 12:00 PM<br>Check-out 11:00 AM<br>Front desk &amp; room service, 24 hours</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="ftr__word" aria-hidden="true" data-split>Hotel Prince</p>
+
+    <div class="wrap">
+      <div class="ftr__bottom">
+        <p>© <span data-year>2026</span> Hotel Prince, Kakdwip. All rights reserved.</p>
+        <p>Free Wi-Fi · Free parking · No pets</p>
+        <a class="ftr__link" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile action bar -->
+  <div class="dock" data-dock>
+    <a class="dock__btn" href="tel:+919339044141"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg> Call</a>
+    <a class="dock__btn dock__btn--solid" href="#reserve">Book a stay</a>
+  </div>
+
+  <!-- Photo viewer -->
+  <dialog class="lb" data-lb aria-label="Photo viewer">
+    <div class="lb__stage"><img data-lb-img alt=""></div>
+    <div class="lb__bar">
+      <p class="lb__cap"><span data-lb-count>01 / 12</span><span data-lb-cap></span></p>
+      <div class="lb__nav">
+        <button class="circle-btn circle-btn--light" type="button" data-lb-prev aria-label="Previous photo"><svg class="i" aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+        <button class="circle-btn circle-btn--light" type="button" data-lb-next aria-label="Next photo"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+    <button class="lb__close" type="button" data-lb-close aria-label="Close photo viewer"><svg class="i" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </dialog>
+
+  <!-- Cursor label (mouse only) -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"><span data-cursor-label>View</span></span></div>
+</body>
+</html>
